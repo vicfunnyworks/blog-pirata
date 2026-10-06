@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Ben - El Blog Pirata</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+</head>
+<body>
+
+<header class="cabecera-principal">
+    <a href="dashboard.html" class="titulo-blog">El Blog Pirata</a>
+    <div class="controles-sesion">
+        <button id="btn-login">Login</button>
+        <button id="btn-logout">Logout</button>
+    </div>
+</header>
+
+
+<main class="contenido-pirata">
+    <div class="columna-imagen">
+        <img src="assets/img/longben.jpg" alt="longben">
+    </div>
+
+    <div class="columna-texto">
+        <h2>Long Ben</h2>
+        <div class="caja-texto">
+            <p>Henry Every o Henry Avery (Devon, c. 1659 - desaparecido en 1699) fue un pirata inglés activo en el siglo XVII, también conocido como Avary John, Ben Long y Benjamin Bridgeman. Es más famoso por ser aparentemente uno de los pocos grandes capitanes piratas en retirarse con su botín sin ser arrestado o muerto en batalla. Era un genio del engaño. Apodado "El rey de los piratas" por sus contemporáneos, fue en su momento el bucanero más buscado del mundo.</p>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.getElementById('btn-login').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+
+    document.getElementById('btn-logout').addEventListener('click', function() {
+        alert('Su sesion ha sido cerrada');
+        window.location.href = 'login.html';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Blog Pirata</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+</head>
+<body>
+
+<header class="cabecera-principal">
+    <a href="dashboard.html" class="titulo-blog">El Blog Pirata</a>
+    <div class="controles-sesion">
+        <button id="btn-login">Login</button>
+        <button id="btn-logout">Logout</button>
+    </div>
+</header>
+
+<main class="galeria-piratas">
+    <div class="tarjeta">
+        <a href="barbanegra.html">
+            <h2>Barbanegra</h2>
+            <img src="assets/img/barbanegra.jpg" alt="Barbanegra">
+        </a>
+    </div>
+
+
+    <div class="tarjeta">
+        <a href="blackbart.html">
+            <h2>Black Bart</h2>
+            <img src="assets/img/blackbart.jpg" alt="Black Bart">
+        </a>
+    </div>
+
+
+    <div class="tarjeta">
+        <a href="longben.html">
+            <h2>Long Ben</h2>
+            <img src="assets/img/longben.jpg" alt="Long Ben">
+        </a>
+    </div>
+</main>
+
+<script>
+
+    document.getElementById('btn-login').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+
+    document.getElementById('btn-logout').addEventListener('click', function() {
+        alert('Su sesion ha sido cerrada');
+        window.location.href = 'login.html';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Bart - El Blog Pirata</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/fav.png">
+</head>
+<body>
+
+<header class="cabecera-principal">
+    <a href="dashboard.html" class="titulo-blog">El Blog Pirata</a>
+    <div class="controles-sesion">
+        <button id="btn-login">Login</button>
+        <button id="btn-logout">Logout</button>
+    </div>
+</header>
+
+<main class="contenido-pirata">
+    <div class="columna-imagen">
+        <img src="assets/img/blackbart.jpg" alt="blackbart">
+    </div>
+
+    <div class="columna-texto">
+        <h2>Black Bart</h2>
+        <div class="caja-texto">
+            <p>John Roberts (Casnewydd Bach, Gales, 1682-Cabo López, Gabón, 10 de febrero de 1722), más conocido como Bartholomew Roberts, fue un pirata galés. Por el número de sus atracos, estimados en al menos cuatrocientos, ha sido considerado como uno de los más exitosos de la historia. Después de ejercer el oficio de marinero desde muy joven, a sus treinta y siete años decidió ser parte de la tripulación de Howell Davis, iniciando sus correrías en la piratería. Logró armar una escuadrilla de proporción suficiente para desestabilizar la flota británica, en un tiempo donde esta potencia se debatía por mantener sus posesiones en Norteamérica y el Caribe.[4] Es conocido por el reglamento impuesto a su tripulación y también por su peculiar personalidad que se caracterizaba —entre otras particularidades— en el buen trato a las mujeres, la abstinencia de licor y su educación. Su muerte cerró la etapa de mayor auge de la piratería en América.</p>
+        </div>
+    </div>
+</main>
+
+<script>
+    document.getElementById('btn-login').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+
+    document.getElementById('btn-logout').addEventListener('click', function() {
+        alert('Su Sesion ha sido cerrada');
+        window.location.href = 'login.html';
+    });
+</script>
+</body>
+</html>
